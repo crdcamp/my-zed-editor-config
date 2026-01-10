@@ -8,9 +8,13 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "agent": {
-    "default_model": {
+    "inline_assistant_model": {
       "provider": "ollama",
       "model": "qwen2.5-coder:latest",
+    },
+    "default_model": {
+      "provider": "ollama",
+      "model": "qwen2.5:14b",
     },
     "model_parameters": [],
   },
@@ -34,6 +38,7 @@
   },
   "languages": {
     "Python": {
+      "format_on_save": "off",
       "code_actions_on_format": {
         "source.organizeImports.ruff": false,
       },
